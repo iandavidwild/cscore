@@ -66,9 +66,13 @@ namespace WinformsVisualization
             Stop();
 
             //open the default device 
-            _soundIn = new WasapiLoopbackCapture();
+
+            // IDW - capture from the microphone instead.
+            //_soundIn = new WasapiLoopbackCapture();
+            _soundIn = new WasapiCapture();
             //Our loopback capture opens the default render device by default so the following is not needed
-            //_soundIn.Device = MMDeviceEnumerator.DefaultAudioEndpoint(DataFlow.Render, Role.Console);
+           // var deviceEnumerator = new MMDeviceEnumerator();
+           // _soundIn.Device = MMDeviceEnumerator.DefaultAudioEndpoint(DataFlow.Render, Role.Console);
             _soundIn.Initialize();
 
             var soundInSource = new SoundInSource(_soundIn);
