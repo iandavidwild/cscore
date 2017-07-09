@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inputToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.propertyGrid = new System.Windows.Forms.PropertyGrid();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -76,23 +79,37 @@
             // inputToolStripMenuItem
             // 
             this.inputToolStripMenuItem.Name = "inputToolStripMenuItem";
-            this.inputToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.inputToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
             this.inputToolStripMenuItem.Text = "Options";
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(8, 32);
+            this.pictureBox.Location = new System.Drawing.Point(13, 32);
             this.pictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(713, 427);
+            this.pictureBox.Size = new System.Drawing.Size(718, 372);
             this.pictureBox.TabIndex = 1;
             this.pictureBox.TabStop = false;
+            // 
+            // propertyGrid
+            // 
+            this.propertyGrid.Location = new System.Drawing.Point(739, 32);
+            this.propertyGrid.Margin = new System.Windows.Forms.Padding(4);
+            this.propertyGrid.Name = "propertyGrid";
+            this.propertyGrid.Size = new System.Drawing.Size(230, 372);
+            this.propertyGrid.TabIndex = 2;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 40;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 462);
+            this.ClientSize = new System.Drawing.Size(982, 417);
+            this.Controls.Add(this.propertyGrid);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -114,6 +131,8 @@
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inputToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.PropertyGrid propertyGrid;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
