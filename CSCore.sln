@@ -57,7 +57,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayInputDeviceSample", "Sa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndpointAudioMeterSample", "Samples\EndpointAudioMeterSample\EndpointAudioMeterSample.csproj", "{2EDF3192-9107-4B7A-914A-EA25AFEB9F85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PianoTuner", "Samples\PianoTuner\PianoTuner\PianoTuner.csproj", "{A3D3444B-603A-45F5-AE75-EA72789E3851}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PianoTuner", "Samples\PianoTuner\PianoTuner.csproj", "{A3D3444B-603A-45F5-AE75-EA72789E3851}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
